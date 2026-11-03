@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMax slice">
+
+                    <defs>
+                        <pattern id="shrubs" width="34" height="22" patternUnits="userSpaceOnUse">
+                            <circle cx="10" cy="12" r="7" fill="#1F5A3A" />
+                            <circle cx="27" cy="6" r="5.5" fill="#24663F" />
+                        </pattern>
+                    </defs>
+                    <path fill="#2E7A55" d="M0 760 C200 700 360 690 520 730 C640 760 760 720 900 735 C1060 752 1200 700 1440 720 L1440 900 L0 900 Z" />
+                    <g fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="2">
+                        <path d="M0 788 C200 728 360 718 520 758 C640 788 760 748 900 763 C1060 780 1200 728 1440 748" />
+                        <path d="M0 816 C200 756 360 746 520 786 C640 816 760 776 900 791 C1060 808 1200 756 1440 776" />
+                        <path d="M0 844 C200 784 360 774 520 814 C640 844 760 804 900 819 C1060 836 1200 784 1440 804" />
+                    </g>
+                    <path fill="url(#shrubs)" opacity=".85" d="M940 745 C1060 760 1200 708 1440 728 L1440 800 C1200 780 1060 830 940 815 Z" />
+                
+</svg>

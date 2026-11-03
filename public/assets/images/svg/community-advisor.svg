@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480">
+<style>
+.community-person {
+    animation: community-breathe 6s ease-in-out infinite;
+    animation-delay: var(--person-delay, 0s);
+    transform-box: fill-box;
+    transform-origin: center bottom;
+}
+.community-head { animation: community-nod 8s ease-in-out infinite; transform-box: fill-box; transform-origin: center bottom; }
+.community-leaves { animation: community-sway 7s ease-in-out infinite; transform-box: fill-box; transform-origin: center bottom; }
+.community-device { animation: community-device 6s ease-in-out infinite; transform-box: fill-box; transform-origin: center bottom; }
+.community-sun { animation: community-sun 7s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes community-breathe {
+    0%, 100% { transform: rotate(-.5deg); }
+    50% { transform: translateY(-4px) rotate(.8deg); }
+}
+@keyframes community-nod {
+    0%, 70%, 100% { transform: rotate(0deg); }
+    35% { transform: rotate(-2.5deg); }
+}
+@keyframes community-sway {
+    0%, 100% { transform: rotate(-2deg); }
+    50% { transform: rotate(6deg); }
+}
+@keyframes community-device {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: translateY(-1px) rotate(-3deg); }
+}
+@keyframes community-sun { 50% { transform: scale(1.06); opacity: .85; } }
+
+:root[data-paused="true"] * { animation-play-state: paused !important; }@media (prefers-reduced-motion: reduce) { * { animation-duration: .01ms !important; animation-iteration-count: 1 !important; } }
+</style>
+<circle cx="300" cy="231" r="180" fill="#D8E8D8"/><circle cx="300" cy="231" r="155" fill="none" stroke="#AAC7B6" stroke-dasharray="3 9"/><circle class="community-sun" cx="407" cy="108" r="32" fill="#F1CD7C"/><path d="M57 306L149 180 227 259 302 157 414 280 477 211 554 313Z" fill="#B8CEC0"/><path d="M277 192L302 157 330 190 308 183 299 193 290 185Z" fill="#F5F7E9"/><path d="M30 347Q156 273 300 320T572 321L572 434H30Z" fill="#87B393"/><path d="M21 385Q187 322 329 370T579 357L579 449H21Z" fill="#4C8E6B"/><g fill="none" stroke="#C6E0B9" stroke-width="2" opacity=".45"><path d="M42 415Q230 340 558 402"/><path d="M48 432Q252 362 555 420"/><path d="M117 450Q302 396 552 438"/></g><ellipse cx="300" cy="439" rx="193" ry="17" fill="#255F48" opacity=".18"/><g class="community-person" style="--person-delay:-1.6s"><g transform="translate(290 284) scale(1.1 1.1)"><path d="M-29 36L-32 120-8 120 0 55 9 120 33 120 28 36Z" fill="#234B40"/><path d="M-33 117L-34 133-4 133-7 118M8 118L7 133 40 133 32 117" fill="#123A31"/><path d="M-20-56Q0-45 20-56L39-40 48-5 25 3 29 49Q0 60-30 49L-26 3-49-5-38-40Z" fill="#E9CA89"/><path d="M-3-48V42" stroke="#FFFFFF" stroke-opacity=".18" stroke-width="2"/><g class="community-head"><path d="M-26-89Q-30-126 0-129Q30-126 26-89L22-65Q0-43-22-65Z" fill="#BF825F"/><path d="M-25-99Q-32-136 0-137Q29-133 27-99L14-111Q-4-101-25-99" fill="#173F36"/><path d="M-10-79Q0-72 10-79" fill="none" stroke="#743F2C" stroke-width="2.5" stroke-linecap="round"/><circle cx="-10" cy="-94" r="2" fill="#173F36"/><circle cx="10" cy="-94" r="2" fill="#173F36"/></g><path class="community-arm" d="M-42-13Q-49 8-45 29" fill="none" stroke="#BF825F" stroke-width="15" stroke-linecap="round"/><path class="community-arm" d="M42-13Q58 9 48 22L32 24" fill="none" stroke="#BF825F" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><g class="community-device"><rect x="8" y="-36" width="44" height="57" rx="6" fill="#153F35"/><rect x="13" y="-30" width="34" height="44" rx="3" fill="#B7DFCB"/><path d="M18 3L26-8 33-3 42-18" stroke="#16806A" stroke-width="3" fill="none"/><path d="M43 20L32 23" stroke="#BF825F" stroke-width="11" stroke-linecap="round"/></g></g></g><g class="community-leaves" stroke="#386D47" stroke-width="4" fill="#60965E"><path d="M423 434V338"/><path d="M423 401Q385 392 392 368Q419 371 423 401"/><path d="M423 384Q457 370 452 348Q424 353 423 384"/><path d="M423 360Q405 345 421 323Q438 341 423 360"/></g>
+</svg>
