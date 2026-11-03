@@ -695,7 +695,7 @@ async function loadPartials() {
 }
 
 function initApp() {
-    document.documentElement.classList.add('js');
+    document.documentElement.classList.add('scripts');
 
     document.querySelectorAll('[data-year]').forEach(element => {
         element.textContent = new Date().getFullYear();
