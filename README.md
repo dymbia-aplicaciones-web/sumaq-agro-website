@@ -1,6 +1,6 @@
 # SumaqAgro — Landing Page
 
-[![Release](https://img.shields.io/badge/release-v3.0.0-brightgreen.svg)](#versioning-and-workflow)
+[![Release](https://img.shields.io/badge/release-v3.1.0-brightgreen.svg)](#versioning-and-workflow)
 [![Stack](https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JavaScript%20vanilla-blue.svg)](#technology-stack)
 [![i18n](https://img.shields.io/badge/i18n-ES%20%7C%20EN-orange.svg)](#technical-features)
 [![Course](https://img.shields.io/badge/UPC-1ASI0729%20Open%20Source-red.svg)](https://www.upc.edu.pe/)
