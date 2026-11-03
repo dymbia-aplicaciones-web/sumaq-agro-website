@@ -847,6 +847,11 @@ p a,
     z-index: -2;
 }
 
+.hero__layer {
+    object-fit: cover;
+    object-position: center bottom;
+}
+
 .hero__layer,
 .hero__mist,
 .hero__content {
@@ -868,26 +873,6 @@ p a,
     background:
         linear-gradient(90deg, rgba(3, 33, 28, .55) 0%, rgba(3, 33, 28, .15) 55%, transparent 80%),
         linear-gradient(0deg, rgba(6, 43, 37, .6) 0%, transparent 25%);
-}
-
-.hero__stars circle {
-    animation: twinkle 4s ease-in-out infinite;
-}
-
-.hero__stars circle:nth-child(3n) { animation-delay: 1.3s; }
-.hero__stars circle:nth-child(3n + 1) { animation-delay: 2.6s; }
-
-.hero__beam {
-    animation: scan 5s ease-in-out infinite;
-}
-
-.hero__satellite {
-    animation: drift 9s ease-in-out infinite;
-}
-
-.hero__phone {
-    filter: drop-shadow(0 0 6px #69F0AE);
-    animation: twinkle 2.5s ease-in-out infinite;
 }
 
 .hero__content {
@@ -1516,17 +1501,7 @@ p a,
     border-radius: 28px 0 0 28px;
     background: radial-gradient(ellipse at 45% 45%, #E1EBD8, transparent 72%);
 }
-.community-art { position: relative; z-index: 1; width: 100%; max-width: 580px; height: auto; }
-.community-person {
-    animation: community-breathe 6s ease-in-out infinite;
-    animation-delay: var(--person-delay, 0s);
-    transform-box: fill-box;
-    transform-origin: center bottom;
-}
-.community-head { animation: community-nod 8s ease-in-out infinite; transform-box: fill-box; transform-origin: center bottom; }
-.community-leaves { animation: community-sway 7s ease-in-out infinite; transform-box: fill-box; transform-origin: center bottom; }
-.community-device { animation: community-device 6s ease-in-out infinite; transform-box: fill-box; transform-origin: center bottom; }
-.community-sun { animation: community-sun 7s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.community-art { position: relative; z-index: 1; width: 100%; max-width: 580px; height: auto; aspect-ratio: 5 / 4; pointer-events: none; }
 .community-orbit {
     position: absolute;
     width: 390px;
@@ -1591,27 +1566,8 @@ p a,
 .audience-gallery__spark { color: #8A9F64; font-size: 1.25rem; }
 .audience-playback { display: inline-flex; align-items: center; justify-content: center; gap: .375rem; min-height: 44px; padding: .5rem .75rem; border: 1px solid #DCE5DA; border-radius: var(--radius-pill); color: #3E6250; font-size: .75rem; transition: background .2s; }
 .audience-playback:hover { background: #E9EFDF; }
-.audience-gallery.is-paused .community-art *,
 .audience-gallery.is-paused .community-orbit,
-.audience-panel:not(.is-active) .community-art *,
 .audience-panel:not(.is-active) .community-orbit { animation-play-state: paused; }
-@keyframes community-breathe {
-    0%, 100% { transform: rotate(-.5deg); }
-    50% { transform: translateY(-4px) rotate(.8deg); }
-}
-@keyframes community-nod {
-    0%, 70%, 100% { transform: rotate(0deg); }
-    35% { transform: rotate(-2.5deg); }
-}
-@keyframes community-sway {
-    0%, 100% { transform: rotate(-2deg); }
-    50% { transform: rotate(6deg); }
-}
-@keyframes community-device {
-    0%, 100% { transform: rotate(0deg); }
-    50% { transform: translateY(-1px) rotate(-3deg); }
-}
-@keyframes community-sun { 50% { transform: scale(1.06); opacity: .85; } }
 @keyframes community-orbit { to { transform: rotate(360deg); } }
 @media (max-width: 900px) {
     .audience-panel__copy { padding: 2rem 2rem 2rem 1rem; }
@@ -2065,10 +2021,11 @@ p a,
     transition: background-color .2s, color .2s;
 }
 
-.team-card__link svg {
+.github-icon {
     width: 20px;
     height: 20px;
-    fill: currentColor;
+    background-color: currentColor;
+    mask: url("../images/svg/github.svg") center / contain no-repeat;
 }
 
 .team-card__link:hover {
@@ -2531,28 +2488,6 @@ p a,
 @keyframes bob {
     50% {
         transform: translateY(-8px);
-    }
-}
-
-@keyframes twinkle {
-    50% {
-        opacity: .35;
-    }
-}
-
-@keyframes scan {
-    0%, 100% {
-        opacity: .25;
-    }
-
-    50% {
-        opacity: 1;
-    }
-}
-
-@keyframes drift {
-    50% {
-        transform: translate(1160px, 170px) rotate(-14deg);
     }
 }
 

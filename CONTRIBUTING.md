@@ -51,11 +51,11 @@ sumaqAgro-landing-page/
 
 ### Responsibilities
 
-- `index.html`: Main landing page content and structure.
+- `public/index.html`: Main landing page content and structure.
 - `styles.css`: Shared visual styles, layouts, and responsive rules.
 - `script.js`: Navigation, language selection, pricing interactions, and application initialization.
 - `i18n/en.js` and `i18n/es.js`: English and Spanish translation dictionaries.
-- `public/sections/`: Privacy Policy, Terms of Service, and Cookie Policy pages.
+- `public/pages`: Privacy Policy, Terms of Service, and Cookie Policy pages.
 - `public/assets/images/`: Images and video assets referenced by the website.
 
 ---
@@ -78,7 +78,7 @@ cd sumaqAgro-landing-page
 
 Open the project in your editor and serve the repository root using a local static server, such as the Live Server extension for Visual Studio Code.
 
-Serving the repository root ensures that `index.html` and the `public/` directory are available together.
+Serving the repository root ensures that `public/index.html` and the `public/` directory are available together.
 
 ### Available Scripts
 
@@ -194,7 +194,7 @@ Use `docs` for changes limited to `README.md`, `CHANGELOG.md`, or `CONTRIBUTING.
 
 ### CSS
 
-- Maintain shared styles in `public/assets/css/styles.css`.
+- Maintain shared styles in `public/assets/styles`.
 - Follow the existing class naming conventions, such as `demo__content` and `button--primary`.
 - Reuse existing colors, typography, spacing, and component styles.
 - Prefer reusable classes over repeated inline styles.
