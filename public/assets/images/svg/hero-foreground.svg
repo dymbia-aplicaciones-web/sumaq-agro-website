@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMax slice">
+<style>
+.hero__stars circle {
+    animation: twinkle 4s ease-in-out infinite;
+}
+
+.hero__stars circle:nth-child(3n) { animation-delay: 1.3s; }
+.hero__stars circle:nth-child(3n + 1) { animation-delay: 2.6s; }
+
+.hero__beam {
+    animation: scan 5s ease-in-out infinite;
+}
+
+.hero__satellite {
+    animation: drift 9s ease-in-out infinite;
+}
+
+.hero__phone {
+    filter: drop-shadow(0 0 6px #69F0AE);
+    animation: twinkle 2.5s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+    50% {
+        opacity: .35;
+    }
+}
+@keyframes scan {
+    0%, 100% {
+        opacity: .25;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+@keyframes drift {
+    50% {
+        transform: translate(1160px, 170px) rotate(-14deg);
+    }
+}@media (prefers-reduced-motion: reduce) { * { animation-duration: .01ms !important; animation-iteration-count: 1 !important; } }
+</style>
+
+                    <defs>
+                        <clipPath id="field-clip">
+                            <path d="M0 820 C300 790 600 800 760 815 C980 835 1200 800 1440 810 L1440 900 L0 900 Z" />
+                        </clipPath>
+                    </defs>
+                    <path fill="#062B25" d="M0 820 C300 790 600 800 760 815 C980 835 1200 800 1440 810 L1440 900 L0 900 Z" />
+                    <g clip-path="url(#field-clip)" stroke="#0E4237" stroke-width="3">
+                        <line x1="-300" y1="900" x2="360" y2="815" /><line x1="0" y1="900" x2="465" y2="815" />
+                        <line x1="300" y1="900" x2="570" y2="815" /><line x1="600" y1="900" x2="675" y2="815" />
+                        <line x1="900" y1="900" x2="780" y2="815" /><line x1="1200" y1="900" x2="885" y2="815" />
+                        <line x1="1500" y1="900" x2="990" y2="815" /><line x1="1800" y1="900" x2="1095" y2="815" />
+                    </g>
+                    <g fill="#031D19" transform="translate(216 0)">
+                        <path d="M372 805 L376 760 L384 760 L382 805 Z" />
+                        <path d="M388 805 L388 760 L396 760 L398 805 Z" />
+                        <path d="M368 762 C366 742 370 728 384 726 C398 728 402 742 400 762 Z" />
+                        <circle cx="384" cy="716" r="8" />
+                        <ellipse cx="384" cy="709" rx="15" ry="3.5" />
+                        <path d="M376 709 C377 699 391 699 392 709 Z" />
+                        <path d="M396 735 L410 722 L413 725 L400 741 Z" />
+                        <rect class="hero__phone" x="408" y="711" width="8" height="12" rx="1.5" fill="#69F0AE" />
+                    </g>
+                
+</svg>

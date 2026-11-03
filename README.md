@@ -1,143 +1,166 @@
 # SumaqAgro — Landing Page
 
-[![Release](https://img.shields.io/badge/release-v3.0.0-brightgreen.svg)](#versionado-y-flujo-de-trabajo)
-[![Stack](https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JavaScript%20vanilla-blue.svg)](#stack-tecnológico)
-[![i18n](https://img.shields.io/badge/i18n-ES%20%7C%20EN-orange.svg)](#internacionalización-es--en)
+[![Release](https://img.shields.io/badge/release-v3.1.0-brightgreen.svg)](#versioning-and-workflow)
+[![Stack](https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JavaScript%20vanilla-blue.svg)](#technology-stack)
+[![i18n](https://img.shields.io/badge/i18n-ES%20%7C%20EN-orange.svg)](#technical-features)
 [![Course](https://img.shields.io/badge/UPC-1ASI0729%20Open%20Source-red.svg)](https://www.upc.edu.pe/)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](LICENSE.md)
 
-Repositorio oficial del **Landing Page** de **SumaqAgro**, la plataforma SaaS de agricultura de precisión de la startup peruana **Dymbia**. Sitio web estático, responsive y bilingüe (español/inglés), desarrollado con HTML5, CSS3 y JavaScript vanilla, sin frameworks ni dependencias de ejecución, para cargar rápido en redes móviles rurales.
+Official repository for the **SumaqAgro Landing Page**, the precision agriculture SaaS platform developed by the Peruvian startup **Dymbia**. A static, responsive, bilingual (Spanish/English) website built with HTML5, CSS3, and vanilla JavaScript, without frameworks or runtime dependencies, for fast loading on rural mobile networks.
 
-Proyecto desarrollado para el curso *1ASI0729 Desarrollo de Aplicaciones Open Source* (UPC, Ciclo 2026-20) bajo GitFlow y Conventional Commits.
-
----
-
-## Información Académica
-
-- **Institución:** Universidad Peruana de Ciencias Aplicadas (UPC)
-- **Facultad:** Facultad de Ingeniería
-- **Carrera:** Ingeniería de Software
-- **Curso:** 1ASI0729 - Desarrollo de Aplicaciones Open Source
-- **Ciclo Académico:** 2026-20
-- **Docente:** Velasquez Nuñez, Angel Augusto
+Project developed for the course *1ASI0729 Open Source Applications Development* (UPC, Academic Term 2026-20), following GitFlow and Conventional Commits.
 
 ---
 
-## Descripción del Proyecto
+## Academic Information
+
+- **Institution:** Universidad Peruana de Ciencias Aplicadas (UPC)
+- **Faculty:** Faculty of Engineering
+- **Degree Program:** Software Engineering
+- **Course:** 1ASI0729 - Open Source Applications Development
+- **Academic Term:** 2026-20
+- **Instructor:** Velasquez Nuñez, Angel Augusto
+
+---
+
+## Project Description
 
 **Startup:** Dymbia  
-**Producto:** SumaqAgro
+**Product:** SumaqAgro
 
-**Dymbia** busca cerrar la brecha de digitalización del sector agroalimentario peruano, orientándose a pequeños y medianos productores, cooperativas agrarias y asesores técnicos de las cadenas de **papa andina** y **café de especialidad**.
+**Dymbia** aims to close the digitalization gap in Peru's agrifood sector, focusing on small and medium-sized growers, agricultural cooperatives, and technical advisors in the **Andean potato** and **specialty coffee** value chains.
 
-Este landing page es la **puerta de entrada comercial** de SumaqAgro: comunica la propuesta de valor bajo el lema *"Cultiva con información. Decide con precisión"*, presenta al equipo, los planes de suscripción y dirige al usuario hacia el registro.
+This landing page is SumaqAgro's **commercial entry point**: it communicates the value proposition through the slogan *"Cultivate with Information. Decide with Precision"*, introduces the team and subscription plans, and guides visitors toward plan inquiries.
 
-### Soluciones presentadas en la Landing
-1. **Monitoreo Satelital de Vigor y Humedad:** NDVI y NDWI vía Sentinel-2, sin sensores en campo.
-2. **Contabilidad de Costos por Lote:** registro financiero y precio mínimo de venta.
-3. **Certificación Digital de Calidad de Cosecha:** constancias PDF con sello QR auditable.
-4. **Prescripciones y Alertas Agronómicas:** avisos ante heladas, plagas y estrés hídrico.
+### Solutions Presented on the Landing Page
+
+1. **Satellite Vigor and Moisture Monitoring:** NDVI and NDWI through Sentinel-2, without field sensors.
+2. **Cost Accounting per Plot:** financial records and minimum selling price.
+3. **Digital Harvest Quality Certification:** PDF certificates with an auditable QR seal.
+4. **Agronomic Prescriptions and Alerts:** notifications about frost, pests, and water stress.
 
 ---
 
-## Secciones del Sitio
+## Website Sections
 
-La landing sigue un recorrido de conversión: **propuesta de valor → problema → solución → prueba → precio → confianza → acción**. Cada bloque responde a una historia de usuario de la épica EPIC-01 del reporte.
+The landing page follows a conversion journey: **value proposition → problem → solution → proof → pricing → trust → action**. Each block addresses a user story from EPIC-01 in the project report.
 
-| # | Sección | Ancla | Objetivo | US |
+| # | Section | Anchor | Purpose | US |
 |---|---|---|---|---|
-| 1 | Hero | `#hero` | Propuesta de valor, captura real de la app y CTA "Empieza gratis" | US-01 |
-| 2 | El desafío | `#problem` | Problemas del productor y cifras oficiales con fuente (MIDAGRI, INEI, JNC) | US-01 |
-| 3 | Soluciones | `#solutions` | Los 4 módulos con filtro por perfil (Agricultor, Cooperativa, Asesor) | US-06 |
-| 4 | Cómo funciona | `#how-it-works` | 3 pasos de uso y vista Salud del Cultivo | US-06 |
-| 5 | Demo | `#demo` | Video con carga diferida (miniatura → reproductor) | US-05 |
-| 6 | ¿A quién ayudamos? | `#audience` | Beneficios, plan recomendado y CTA por segmento | US-06 |
-| 7 | Planes | `#plans` | Semilla, Cooperativa Pro y Asesor Técnico con facturación mensual/anual | US-07 |
-| 8 | Impacto y testimonios | `#impact` | Metas de impacto (hipótesis Lean UX) y carrusel de testimonios | US-08 |
-| 9 | Nosotros y equipo | `#about`, `#team` | Misión, visión, perfiles con enlace a GitHub y video del equipo | US-04 |
-| 10 | Preguntas frecuentes | `#faq` | Resuelve objeciones antes de registrarse | — |
-| 11 | CTA final | `#cta` | Selector de perfil que recomienda el plan y lleva al registro | US-07 |
-| 12 | Footer | — | Navegación, contacto y políticas legales en ventana modal | US-09 |
+| 1 | Hero | `#hero` | Value proposition, animated Andean landscape, and "View plans" CTA | US-01 |
+| 1b | Platform showcase | `#platform` | Real application screenshot, scrolling marquee, and platform highlights | US-01 |
+| 2 | The challenge | `#problem` | Grower challenges and official statistics with sources (MIDAGRI, INEI, JNC) | US-01 |
+| 3 | Solutions | `#solutions` | Four modules with profile filters (Farmer, Cooperative, Advisor) | US-06 |
+| 4 | How it works | `#how-it-works` | Three usage steps and the Crop Health view | US-06 |
+| 5 | Demo | `#demo` | Lazy-loaded video (thumbnail → player) | US-05 |
+| 6 | Who do we help? | `#audience` | Animated profile gallery, benefits, recommended plan, and CTA per segment | US-06 |
+| 7 | Plans | `#plans` | Seed, Cooperative Pro, and Technical Advisor with monthly/annual billing | US-07 |
+| 8 | Impact and testimonials | `#impact` | Impact goals (Lean UX hypotheses) and testimonial carousel | US-08 |
+| 9 | About us and team | `#about`, `#team` | Mission, vision, profiles with GitHub links, and team video placeholder | US-04 |
+| 10 | Frequently asked questions | `#faq` | Answers to questions before signing up | — |
+| 11 | Final CTA | `#cta` | Profile selector that recommends a plan and prepares an email inquiry | US-07 |
+| 12 | Footer | — | Navigation, contact information, and legal policies in a modal dialog | US-09 |
 
-### Páginas Legales
-- [`public/sections/policy.html`](public/sections/policy.html) — Política de Privacidad
-- [`public/sections/service.html`](public/sections/service.html) — Términos de Servicio
-- [`public/sections/cookie.html`](public/sections/cookie.html) — Política de Cookies
+### Legal Pages
 
----
-
-## Características Técnicas
-
-- **Bilingüe ES/EN:** traducción dinámica mediante `data-i18n` (contenido) y `data-i18n-attr` (atributos como `alt` o `aria-label`); el idioma inicial se toma de `localStorage` o del navegador.
-- **Selector de facturación:** alterna precios mensual/anual, muestra el equivalente mensual y sincroniza el periodo (`/mes` · `/año`) con el idioma activo.
-- **Conversión:** CTA principal repetido en hero, segmentos, planes y cierre; el selector de perfil del CTA final envía el plan elegido (`?plan=`) a la aplicación web.
-- **Políticas legales en modal:** los enlaces legales abren un `<dialog>` con el contenido de la página legal y, si no es posible, navegan a la página completa.
-- **Responsive Design:** media queries y menú móvil (hamburguesa) para móvil, tablet y escritorio.
-- **SEO y Open Graph:** meta tags, título descriptivo y propiedades `og:*` en el `<head>`.
-- **Accesibilidad:** HTML semántico, `aria-labelledby`, `aria-live` y etiquetas dinámicas en el botón de idioma.
-- **Rendimiento:** imágenes WebP optimizadas (~620 KB en total), carga diferida de imágenes y video, e Inter autoalojada.
+- [Privacy Policy](public/pages/policy.html)
+- [Terms of Service](public/pages/service.html)
+- [Cookie Policy](public/pages/cookie.html)
 
 ---
 
-## Stack Tecnológico
+## Technical Features
 
-| Capa | Tecnología |
+- **Bilingual ES/EN:** dynamic translation through `data-i18n` (content) and `data-i18n-attr` (attributes such as `alt` or `aria-label`); the initial language comes from `localStorage` or the browser.
+- **Billing selector:** switches monthly/annual prices, displays the monthly equivalent, and synchronizes the billing period (`/month` · `/year`) with the active language.
+- **Conversion:** the primary CTA is repeated in the hero, segments, plans, and closing section; plan buttons and the final profile selector prepare an email with the selected plan and billing period.
+- **Legal policies in a modal:** legal links open a `<dialog>` containing the legal page content and fall back to the full page when necessary.
+- **Responsive design:** media queries and a mobile hamburger menu for mobile, tablet, and desktop layouts.
+- **SEO and Open Graph:** meta tags, a descriptive title, and `og:*` properties in the `<head>`.
+- **Accessibility:** semantic HTML, `aria-labelledby`, `aria-live`, dynamic language control labels, and reduced-motion support.
+- **Performance:** optimized WebP images, lazy-loaded images and video, and self-hosted Inter fonts.
+- **Shared layout:** header and footer partials loaded from `public/assets/partials/`.
+- **External SVG assets:** hero layers, community illustrations, and the reusable GitHub icon stored in `public/assets/images/svg/`, preserving parallax, animations, and gallery playback controls.
+
+---
+
+## Technology Stack
+
+| Layer | Technology |
 |---|---|
-| Marcado | HTML5 semántico |
-| Estilos | CSS3 (`public/assets/css/styles.css`) |
-| Lógica | JavaScript vanilla (`public/assets/js/script.js`) |
-| i18n | Módulos de traducción (`public/assets/js/i18n/`) |
-| Tipografía | Poppins (títulos, Google Fonts) e Inter (texto, autoalojada) |
-| Iconografía | Material Symbols Outlined y SVG |
-| Gestión de proyecto | Jira, Miro, GitHub |
+| Markup | Semantic HTML5 |
+| Styles | CSS3 (`public/assets/styles`) |
+| Logic | Vanilla JavaScript (`public/assets/js/script.js`) |
+| i18n | Translation modules (`public/assets/js/i18n/`) |
+| Typography | Poppins (headings, Google Fonts) and Inter (body text, self-hosted) |
+| Iconography | Material Symbols Outlined and SVG (`public/assets/images/svg/`) |
+| Project management | Jira, Miro, GitHub |
 
-> **Nota de Alcance:** SumaqAgro es exclusivamente software en la nube; no contempla sensores físicos ni dispositivos IoT.
+> **Scope Note:** SumaqAgro is exclusively cloud software; it does not include physical sensors or IoT devices.
 
 ---
 
-## Ejecución Local
+## Local Setup
 
-No requiere compilación ni instalación de dependencias.
+No build step or dependency installation is required.
 
 ```bash
-# 1. Clonar el repositorio
-git clone [https://github.com/dymbia-opensource/sumaqAgro-landing-page.git](https://github.com/dymbia-opensource/sumaqAgro-landing-page.git)
+# 1. Clone the repository
+git clone https://github.com/dymbia-opensource/sumaqAgro-landing-page.git
 cd sumaqAgro-landing-page
 
-# 2. Abrir directamente index.html en el navegador, o servirlo localmente:
-python3 -m http.server 8080
+# 2. Serve the public directory locally (requires Python):
+python3 -m http.server 8080 --directory public
 # → http://localhost:8080
 ```
 
-## Estructura de Directorios
+On Windows, you can use `py -m http.server 8080 --directory public`. Use a local HTTP server so the shared partials, legal dialogs, and SVG animation controls work correctly.
+
+## Directory Structure
 
 ```text
 sumaqAgro-landing-page/
 ├── public/
 │   ├── assets/
-│   │   ├── css/
-│   │   │   └── styles.css          # Estilos globales y media queries responsive
-│   │   ├── fonts/                  # Inter (400–700) en .ttf
-│   │   ├── images/                 # Logos y fotos en WebP, capturas de la app
-│   │   └── js/
-│   │       ├── i18n/               # Diccionarios de internacionalización
-│   │       │   ├── en.js           # Traducción al inglés
-│   │       │   └── es.js           # Traducción al español
-│   │       └── script.js           # Lógica principal, menú móvil, billing y toggle i18n
-│   └── sections/                   # Páginas secundarias y legales
-│       ├── cookie.html             # Política de Cookies
-│       ├── policy.html             # Política de Privacidad
-│       └── service.html            # Términos de Servicio
-├── index.html                      # Página principal
-├── 404.html                        # Página no encontrada (Cloudflare Pages)
+│   │   ├── fonts/                  # Inter (400–700) in .ttf format
+│   │   ├── images/                 # PNG logos, WebP photos, and application screenshots
+│   │   │   └── svg/                # External vector illustrations and icons
+│   │   │       ├── community-advisor.svg
+│   │   │       ├── community-cooperative.svg
+│   │   │       ├── community-farmer.svg
+│   │   │       ├── github.svg
+│   │   │       ├── hero-andes.svg
+│   │   │       ├── hero-foreground.svg
+│   │   │       ├── hero-mountains.svg
+│   │   │       ├── hero-sky.svg
+│   │   │       └── hero-terraces.svg
+│   │   ├── js/
+│   │   │   ├── i18n/               # Internationalization dictionaries
+│   │   │   │   ├── en.js           # English translations
+│   │   │   │   └── es.js           # Spanish translations
+│   │   │   └── script.js           # Main logic, mobile menu, billing, and language switching
+│   │   ├── partials/               # Shared layout components
+│   │   │   ├── _header.html        # Header and navigation
+│   │   │   └── _footer.html        # Footer
+│   │   └── styles/
+│   │       └── styles.css          # Global styles and responsive media queries
+│   ├── pages/                      # Secondary and legal pages
+│   │   ├── cookie.html             # Cookie Policy
+│   │   ├── policy.html             # Privacy Policy
+│   │   └── service.html            # Terms of Service
+│   ├── index.html                  # Main page
+│   └── 404.html                    # Not-found page (Cloudflare Pages)
 ├── package.json
 ├── .gitignore
+├── CHANGELOG.md
+├── CONTRIBUTING.MD
+├── LICENSE.md
 └── README.md
 ```
 
-## Equipo de Desarrollo
+## Development Team
 
-| Integrante |
+| Member |
 |---|
 | Solorzano Sullca, Benjamin |
 | Tejada Pumacayo, Yamil Jared |
@@ -147,19 +170,19 @@ sumaqAgro-landing-page/
 
 ---
 
-## Versionado y Flujo de Trabajo
+## Versioning and Workflow
 
-- **GitFlow:** ramas `main` (producción), `develop` (integración), `feature/*`, `release/*` y `fix/*`.
+- **GitFlow:** `main` (production), `develop` (integration), `feature/*`, `release/*`, and `fix/*` branches.
 - **Conventional Commits:** `feat(landing): …`, `fix(i18n): …`, `style(footer): …`.
 - **Releases:**
-    - `v1.0.0` — Landing page inicial, i18n, SEO y equipo.
-    - `v1.1.0` — Layout responsive, menú móvil y correcciones de páginas legales.
-    - `v3.0.0` — Rediseño orientado a conversión (problema, cómo funciona, FAQ, selector de plan) y optimización de imágenes.
+    - `v1.0.0` — Initial landing page, i18n, SEO, and team.
+    - `v1.1.0` — Responsive layout, mobile menu, and legal page fixes.
+    - `v3.0.0` — Conversion-oriented redesign (problem, how it works, FAQ, plan selector) and image optimization.
 
 ---
 
-## Licencia
+## License
 
-Distribuido bajo la licencia **CC BY-NC-SA 4.0**. Ver [`LICENSE.md`](LICENSE.md).
+Distributed under the **CC BY-NC-SA 4.0** license. See [`LICENSE.md`](LICENSE.md).
 
 © 2026 Dymbia — SumaqAgro.

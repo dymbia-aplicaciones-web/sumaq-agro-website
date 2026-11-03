@@ -19,7 +19,7 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - **Legal policies in a modal dialog** with fallback to the full page — US-09.
 - **GitHub links** on team cards — US-04.
 - Real screenshots of the SumaqAgro web app in the hero and *How it works*.
-- `404.html`, canonical URL, absolute Open Graph image and JSON-LD `SoftwareApplication` data.
+- `public/404.html`, canonical URL, absolute Open Graph image and JSON-LD `SoftwareApplication` data.
 - `data-i18n-attr` support to translate `alt` and `aria-label` attributes; browser language detection.
 
 ### Changed
@@ -56,9 +56,9 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ### Added
 - **Legal Pages**:
-  - Privacy Policy (`public/sections/policy.html`) describing information collection, data usage, protection, and contact details.
-  - Terms of Service (`public/sections/service.html`) covering service acceptance, user accounts, intellectual property, and liability.
-  - Cookie Policy (`public/sections/cookie.html`) describing cookie categories and browser management options.
+  - Privacy Policy (`public/pages`) describing information collection, data usage, protection, and contact details.
+  - Terms of Service (`public/pages`) covering service acceptance, user accounts, intellectual property, and liability.
+  - Cookie Policy (`public/pages`) describing cookie categories and browser management options.
   - Shared branding, footer navigation, and language controls across legal pages.
 - **Internationalization**:
   - English and Spanish language switching through `data-i18n` attributes and language dictionaries in `public/assets/js/i18n/`.
@@ -76,7 +76,7 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ## [1.0.0]
 
 ### Added
-- **Landing Page (`index.html`)**:
+- **Landing Page (`public/index.html`)**:
   - Hero section presenting SumaqAgro and its precision agriculture value proposition.
   - About Us section describing the platform and its focus on Peruvian potato and coffee growers.
   - Audience cards for independent farmers, cooperative leaders, and technical advisors.
@@ -98,7 +98,7 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ### Changed
 
-- **Project Structure**: Reorganized assets and legal pages under `public/assets/` and `public/sections/`.
+- **Project Structure**: Reorganized assets and legal pages under `public/assets/` and `public/pages`.
 - **Product Demonstration**: Replaced the previous video player with an embedded YouTube iframe and updated its styles.
 - **Project Documentation**: Updated README layout and project structure information.
 

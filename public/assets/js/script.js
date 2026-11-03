@@ -1,5 +1,6 @@
 const DEFAULT_LANG = 'en';
 const SUPPORTED_LANGS = ['en', 'es'];
+const SCRIPT_URL = document.currentScript.src;
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -278,6 +279,18 @@ function initAudienceGallery() {
         playback.setAttribute('aria-pressed', String(userPaused));
     };
 
+    const syncArtwork = () => {
+        panels.forEach(panel => {
+            const artwork = panel.querySelector('object.community-art');
+            const root = artwork?.contentDocument?.documentElement;
+            if (root) root.dataset.paused = String(userPaused || pauses.size > 0 || !panel.classList.contains('is-active'));
+        });
+    };
+
+    gallery.querySelectorAll('object.community-art').forEach(artwork => {
+        artwork.addEventListener('load', syncArtwork);
+    });
+
     const select = (index, manual = false) => {
         active = (index + tabs.length) % tabs.length;
         elapsed = 0;
@@ -295,6 +308,8 @@ function initAudienceGallery() {
             panels[i].inert = !selected;
         });
 
+        syncArtwork();
+
         if (manual) {
             status.textContent = t('audience_status').replace('{segment}', t(`audience_tab${active + 1}`));
         }
@@ -311,6 +326,7 @@ function initAudienceGallery() {
     const syncPlayback = () => {
         const paused = userPaused || pauses.size > 0;
         gallery.classList.toggle('is-paused', paused);
+        syncArtwork();
         if (paused && frame !== null) {
             cancelAnimationFrame(frame);
             frame = null;
@@ -658,6 +674,26 @@ function initLegalDialog() {
 
 /* ---------- App ---------- */
 
+async function loadPartials() {
+    const partials = [
+        ['header-placeholder', '../partials/_header.html'],
+        ['footer-placeholder', '../partials/_footer.html']
+    ];
+
+    await Promise.all(partials.map(async ([placeholderId, path]) => {
+        const placeholder = document.getElementById(placeholderId);
+        if (!placeholder) return;
+
+        try {
+            const response = await fetch(new URL(path, SCRIPT_URL));
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            placeholder.innerHTML = await response.text();
+        } catch (error) {
+            console.error(`Could not load partial "${path}"`, error);
+        }
+    }));
+}
+
 function initApp() {
     document.documentElement.classList.add('js');
 
@@ -681,8 +717,13 @@ function initApp() {
     initLegalDialog();
 }
 
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initApp);
-} else {
+async function startApp() {
+    await loadPartials();
     initApp();
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', startApp, { once: true });
+} else {
+    startApp();
 }
