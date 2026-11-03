@@ -676,8 +676,8 @@ function initLegalDialog() {
 
 async function loadPartials() {
     const partials = [
-        ['header-placeholder', '../partials/_header.html'],
-        ['footer-placeholder', '../partials/_footer.html']
+        ['header-placeholder', '../../_header.html'],
+        ['footer-placeholder', '../../_footer.html']
     ];
 
     await Promise.all(partials.map(async ([placeholderId, path]) => {
