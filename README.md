@@ -60,9 +60,9 @@ La landing sigue un recorrido de conversión: **propuesta de valor → problema 
 | 12 | Footer | — | Navegación, contacto y políticas legales en ventana modal | US-09 |
 
 ### Páginas Legales
-- [`public/sections/policy.html`](public/sections/policy.html) — Política de Privacidad
-- [`public/sections/service.html`](public/sections/service.html) — Términos de Servicio
-- [`public/sections/cookie.html`](public/sections/cookie.html) — Política de Cookies
+- [`public/pages`](public/pages/policy.html) — Política de Privacidad
+- [`public/pages`](public/pages/service.html) — Términos de Servicio
+- [`public/pages`](public/pages/cookie.html) — Política de Cookies
 
 ---
 
@@ -84,7 +84,7 @@ La landing sigue un recorrido de conversión: **propuesta de valor → problema 
 | Capa | Tecnología |
 |---|---|
 | Marcado | HTML5 semántico |
-| Estilos | CSS3 (`public/assets/css/styles.css`) |
+| Estilos | CSS3 (`public/assets/styles`) |
 | Lógica | JavaScript vanilla (`public/assets/js/script.js`) |
 | i18n | Módulos de traducción (`public/assets/js/i18n/`) |
 | Tipografía | Poppins (títulos, Google Fonts) e Inter (texto, autoalojada) |

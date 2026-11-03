@@ -1,5 +1,6 @@
 const DEFAULT_LANG = 'en';
 const SUPPORTED_LANGS = ['en', 'es'];
+const SCRIPT_URL = document.currentScript.src;
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -658,6 +659,26 @@ function initLegalDialog() {
 
 /* ---------- App ---------- */
 
+async function loadPartials() {
+    const partials = [
+        ['header-placeholder', '../partials/_header.html'],
+        ['footer-placeholder', '../partials/_footer.html']
+    ];
+
+    await Promise.all(partials.map(async ([placeholderId, path]) => {
+        const placeholder = document.getElementById(placeholderId);
+        if (!placeholder) return;
+
+        try {
+            const response = await fetch(new URL(path, SCRIPT_URL));
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            placeholder.innerHTML = await response.text();
+        } catch (error) {
+            console.error(`Could not load partial "${path}"`, error);
+        }
+    }));
+}
+
 function initApp() {
     document.documentElement.classList.add('js');
 
@@ -681,8 +702,13 @@ function initApp() {
     initLegalDialog();
 }
 
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initApp);
-} else {
+async function startApp() {
+    await loadPartials();
     initApp();
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', startApp, { once: true });
+} else {
+    startApp();
 }
