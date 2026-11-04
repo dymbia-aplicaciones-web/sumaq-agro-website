@@ -242,7 +242,7 @@ window.i18nDictionary.en = {
 
     // Final CTA
     cta_title: "Start making precise decisions today",
-    cta_desc: "Tell us who you are and we will recommend the right plan. Contact us to inquire about signing up.",
+    cta_desc: "Choose the right plan for you and subscribe to SumaqAgro. Make informed decisions and help your farm thrive.",
     finder_legend: "I am a…",
     finder_farmer: "Farmer",
     finder_cooperative: "Cooperative",
