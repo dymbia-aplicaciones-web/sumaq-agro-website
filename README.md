@@ -3,12 +3,12 @@
 [![Release](https://img.shields.io/badge/release-v3.1.0-brightgreen.svg)](#versioning-and-workflow)
 [![Stack](https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JavaScript%20vanilla-blue.svg)](#technology-stack)
 [![i18n](https://img.shields.io/badge/i18n-ES%20%7C%20EN-orange.svg)](#technical-features)
-[![Course](https://img.shields.io/badge/UPC-1ASI0729%20Open%20Source-red.svg)](https://www.upc.edu.pe/)
+[![Course](https://img.shields.io/badge/UPC-1ASI0730%20Web%20Application%20-red.svg)](https://www.upc.edu.pe/)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](LICENSE.md)
 
 Official repository for the **SumaqAgro Landing Page**, the precision agriculture SaaS platform developed by the Peruvian startup **Dymbia**. A static, responsive, bilingual (Spanish/English) website built with HTML5, CSS3, and vanilla JavaScript, without frameworks or runtime dependencies, for fast loading on rural mobile networks.
 
-Project developed for the course *1ASI0729 Open Source Applications Development* (UPC, Academic Term 2026-20), following GitFlow and Conventional Commits.
+Project developed for the course *1ASI0730 Web Application Development* (UPC, Academic Term 2026-20), following GitFlow and Conventional Commits.
 
 ---
 
@@ -17,9 +17,9 @@ Project developed for the course *1ASI0729 Open Source Applications Development*
 - **Institution:** Universidad Peruana de Ciencias Aplicadas (UPC)
 - **Faculty:** Faculty of Engineering
 - **Degree Program:** Software Engineering
-- **Course:** 1ASI0729 - Open Source Applications Development
+- **Course:** 1ASI0730 - Web Application 
 - **Academic Term:** 2026-20
-- **Instructor:** Velasquez Nuñez, Angel Augusto
+- **Instructor:** Villafuerte Bazan, Oscar Ivan
 
 ---
 
