@@ -106,7 +106,7 @@ No build step or dependency installation is required.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/dymbia-opensource/sumaqAgro-landing-page.git
+git clone https://github.com/dymbia-aplicaciones-web/sumaq-agro-landing-page.git
 cd sumaqAgro-landing-page
 
 # 2. Serve the public directory locally (requires Python):
