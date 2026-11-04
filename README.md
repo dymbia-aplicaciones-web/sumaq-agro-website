@@ -63,9 +63,9 @@ The landing page follows a conversion journey: **value proposition â†’ problem â
 
 ### Legal Pages
 
-- [Privacy Policy](public/pages/policy.html)
-- [Terms of Service](public/pages/service.html)
-- [Cookie Policy](public/pages/cookie.html)
+- [Privacy Policy](public/policy.html)
+- [Terms of Service](public/service.html)
+- [Cookie Policy](public/cookie.html)
 
 ---
 
@@ -90,8 +90,8 @@ The landing page follows a conversion journey: **value proposition â†’ problem â
 |---|---|
 | Markup | Semantic HTML5 |
 | Styles | CSS3 (`public/assets/styles`) |
-| Logic | Vanilla JavaScript (`public/assets/js/script.js`) |
-| i18n | Translation modules (`public/assets/js/i18n/`) |
+| Logic | Vanilla JavaScript (`public/assets/scripts`) |
+| i18n | Translation modules (`public/assets/scripts`) |
 | Typography | Poppins (headings, Google Fonts) and Inter (body text, self-hosted) |
 | Iconography | Material Symbols Outlined and SVG (`public/assets/images/svg/`) |
 | Project management | Jira, Miro, GitHub |
