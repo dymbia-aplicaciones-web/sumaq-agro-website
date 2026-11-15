@@ -242,7 +242,7 @@ window.i18nDictionary.es = {
 
     // CTA final
     cta_title: "Empieza a decidir con precisión hoy",
-    cta_desc: "Cuéntanos quién eres y te recomendamos el plan adecuado. Contáctanos para consultar su contratación.",
+    cta_desc: "Elige el plan ideal para ti y suscríbete a SumaqAgro. Cultiva con información y haz crecer tu campo.",
     finder_legend: "Soy…",
     finder_farmer: "Agricultor",
     finder_cooperative: "Cooperativa",
